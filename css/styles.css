@@ -10,6 +10,25 @@
     --third-color:#E7E9FC;
     --logo-color:#F4F4FD;
     --hiro-color:#0a0b23;}
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;}
+
+ul {margin-top:0;
+    margin-bottom: 0;
+    margin-left: 0;
+    }
+.cotainer{ 
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;}    
+img{
+        display: block;}
+
 .list {
     list-style: none;}
 
@@ -24,7 +43,7 @@ body {
 .btn {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
@@ -35,7 +54,8 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;}
+    text-transform: capitalize;
+    margin-bottom: 72px; }
 
 .description {
     
@@ -49,7 +69,8 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;}
 
 .logo {
     font-family: Raleway, sans-serif; 
@@ -60,20 +81,39 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    }
 
 address{ 
-    font-style:normal;}
+    font-style:normal; 
+    align-items: center;
+    margin-left: auto;}
+.page-nav{
+          display: flex;
+          align-items: center;}    
 /* -----------------------------header------------------------------------ */
+.page-header{
+    padding-top: 24px;
+padding-bottom:24px;}
+
+
 .header-logo {
-    color:var(--accent-color);}
+    color:var(--accent-color);
+    margin-right:76px;
+    }
 
 .header-logo span {
 
     color: var(--main-title-color);}
+.menu-list{
+    display: flex;
+    align-items: center;}
+.menu-list :not(:last-child){
+        margin-right: 40px;}
+    
 
 .menu-link {
-    
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -84,6 +124,13 @@ address{
 .menu-link:focus {
     color: var(--focus-color);}
 
+
+
+.adres-list{ 
+    margin-left: auto;
+    display: flex;
+    align-items: center;}
+
 .meil-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -92,13 +139,19 @@ address{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--contact-color);
-    cursor:auto;}
+    cursor:auto;
+    margin-right:40px;}
+    
+  
       
-   
+.adres{
+    margin-left: auto;
+}
    
 .meil-link:hover,
 .meil-link:focus {
-    color: var(--focus-color);}
+    color: var(--focus-color);
+}
 
 .tel {font-family: 'Roboto';
     font-style: normal;
@@ -108,7 +161,11 @@ address{
     letter-spacing: 0.02em;
     color: var(--contact-color);
     cursor: auto;}
-   
+
+.page-header-coteiner {
+    display: flex;
+    align-items: center;
+ }  
    
     
 
@@ -119,15 +176,29 @@ address{
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--first-color);}
+    color: var(--first-color);
+    text-align:center;}
 
 .hirol {
     background-color: var(--hiro-color);
     color: var(--first-color);}
 
+.hirol-cotainer{
+    text-align: center;}
+
 .hirol-btn {
+    width: 200px;
+    height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     color: var(--first-color);
-    background-color:var(--btn-color)}
+    background-color:var(--btn-color);}
+
 .hirol-btn:hover,
 .hirol-btn:focus {
     color: var(--first-color);
@@ -151,29 +222,56 @@ address{
 .principes-description {
     color: var(--contact-color);}
 
+.principes-subject-description{
+    display: flex;
+
+
+}
 /* ----------------------------What are we doing------------------------------------------- */
+.doing {
+    margin-bottom: 120px;}
 .doing-title {
-    color: var(--main-title-color);}
+    color: var(--main-title-color);
+    margin-bottom: 72px;
+    text-align:center;}
 
+.doing-list{
+    display: flex;
+    gap: 24px;
+    flex-basis: calk((100%-48px)/3);}
 /* ---------------------------------Our Team -------------------------------------------------*/
-
+.tem {
+    background-color: var(--logo-color);
+    padding-top: 124px;
+    padding-bottom: 116px;}
 .tem-titel {
-   color: var(--main-title-color);}
+   color: var(--main-title-color);
+   text-align:center;}
 
 .tem-subject {
-    color: var(--main-title-color);}
+    color: var(--main-title-color);
+    margin-bottom: 8px;}
 
 .tem-description {
     color: var(--contact-color);}
 
-.tem {
-    background-color: var(--logo-color);}
+.tem-list{
+    display: flex;
+    gap: 24px;
+    flex-basis: calk((100%-48px)/3);}
+
+.tem-description-item{
+    padding: 32px;}
 
 
 
 /*---------------------------------------------- footer.------------------------------------ */
+
 .footer-logo {
-    color: var(--btn-color);}
+color: var(--btn-color);
+margin-top: 100px;
+margin-bottom: 16px;
+margin-left: 156px;}
 
 .footer-second-logo {
     color: var(--logo-color);}
@@ -184,6 +282,11 @@ address{
 .footer {
     background-color: var(--second-foot-color);}
 
+.footer-description{
+    width: 264px;
+    height: 72px;
+    margin-top: 16px;
+    margin-left: 156px;}
 /* -----------------------------------------header portfolio--------------------------------------- */
 
 
@@ -228,7 +331,6 @@ address{
     color: var(--contact-color);}
 
 /* -----------------------------------------------button------------------------------------------------- */
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -249,6 +351,13 @@ address{
 .navegetion-btn:focus {
     color: var(--first-color);
     background-color: var(--focus-color);}
+
+.navegetion-list {
+    display:flex;
+    align-items: center;} 
+.navegetion-list :not(:last-child){
+    margin-right: 24px;
+   justify-content: space-between;}   
 /* ---------------------------------imagis--------------------------------------------------------- */
 .images-title visually-hidden {
     position: absolute;
@@ -267,6 +376,16 @@ address{
 
 .images-description {
     color: var(--contact-color);}
+
+.images-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+
+.image-item{
+    margin-bottom: 48px;
+    width: calk((100%-48px)/3);
+    justify-content: space-between;}
 
 /* ----------------------------------footer portfolio--------------------------------------------------- */
 .footer-logo {
